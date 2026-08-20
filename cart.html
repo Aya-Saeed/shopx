@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopX | Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar shop-navbar">
+        <div class="navbar-container">
+
+            <a class="shop-logo" href="index.html">
+                ShopX
+            </a>
+
+            <a href="index.html" class="continue-shopping">
+                <i class="fa-solid fa-arrow-left"></i>
+                Continue Shopping
+            </a>
+
+        </div>
+    </nav>
+    <!-- Cart -->
+    <main class="cart-page">
+        <div class="container">
+            <h1 class="cart-title">
+                Shopping Cart
+            </h1>
+            <div class="row g-4">
+                <!-- Cart Items -->
+                <div class="col-lg-8">
+
+                    <section id="cartItems" class="cart-items">
+                        <!-- Products will be rendered here -->
+                    </section>
+                </div>
+                <!-- Summary -->
+                <div class="col-lg-4">
+                    <div class="cart-summary">
+                        <h4>Order Summary</h4>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="shipping">$5.00</span>
+                        </div>
+                        <hr>
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                        <button class="checkout-btn" aria-label="Proceed to checkout" disabled>
+                            Proceed to Checkout
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="simple-footer">
+        <p>© 2026 All rights reserved | Eng: Aya Saeed</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>

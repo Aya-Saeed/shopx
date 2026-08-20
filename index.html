@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopX</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/shopx.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+    <nav class="navbar shop-navbar">
+        <div class="navbar-container">
+
+            <a class="shop-logo" href="index.html">
+                ShopX
+            </a>
+
+            <div class="navbar-actions">
+
+                <div class="search-wrapper">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchInput" type="text" aria-label="Search products" placeholder="Search products...">
+                </div>
+
+                <a href="cart.html" class="cart-btn" aria-label="Shopping cart">
+                    <div class="cart-icon">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span id="cartCount" class="cart-badge">0</span>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+    <main class="container-fluid">
+
+        <h2 class="mb-4 text-center fw-bold">🛒 Explore Products</h2>
+
+        <div class="d-flex justify-content-center mb-4">
+            <div class="btn-group shadow-sm">
+                <button id="sortDefault" class="btn btn-outline-dark active">Default</button>
+                <button id="sortAsc" class="btn btn-outline-dark">Price ↑</button>
+                <button id="sortDesc" class="btn btn-outline-dark">Price ↓</button>
+            </div>
+        </div>
+
+        <div id="products" class="products-grid">
+            <!-- products  -->
+        </div>
+
+
+        <div class="pagination-wrapper mt-4">
+            <button id="prev" class="btn btn-secondary">Prev</button>
+            <div id="pagination" class="pagination"></div>
+            <button id="next" class="btn btn-secondary">Next</button>
+        </div>
+
+    </main>
+
+
+    <footer class="simple-footer">
+        <p>© 2026 All rights reserved | Eng: Aya Saeed</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/shopx.js"></script>
+</body>
+
+</html>
